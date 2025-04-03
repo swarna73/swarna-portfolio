@@ -14,7 +14,7 @@ function App() {
         </p>
         <div className="mt-6 flex gap-4">
           <a href="https://github.com/swarna73" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/swaminathanswarna/" className="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-gray-100" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/swarnalathatech/" className="border border-gray-800 text-gray-800 px-4 py-2 rounded hover:bg-gray-100" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
 
