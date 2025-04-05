@@ -21,6 +21,13 @@ const projects = [
     tech: ["Java", "Spring Boot", "Hibernate"],
     image: "expense.png",
     link: "https://github.com/swarna73/expense-manager"
+  },
+ {
+    title: " URL Shortener",
+    description: "A simple URL shortener web application built with Node.js, Express, and MongoDB. It provides REST APIs to shorten URLs and redirects users to original websites.",
+    tech: ["Node JS"],
+    image: "Shortner.png",
+    link: "https://github.com/swarna73/url-shortener-node-express"
   }
 ];
 
