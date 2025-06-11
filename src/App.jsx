@@ -22,9 +22,7 @@ export default function App() {
 
       {/* Hero Section */}
       <header className="text-center animate-fade-in">
-<h1 className="text-4xl md:text-6xl font-extrabold text-white whitespace-nowrap overflow-hidden border-r-4 border-white w-[28ch] animate-typing">
-  Hi, I'm Swarnalatha Swaminathan 
-</h1>
+<h1 className="text-4xl font-bold mb-4 typewriter">Swarnalatha Swaminathan</h1>
         <p className="mt-4 text-lg text-gray-300">
           <Typewriter
             words={[

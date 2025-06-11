@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Section padding and layout */
+section {
   padding: 2rem;
+}
+
+/* Header styling */
+header {
   text-align: center;
+  margin-top: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Project card styling */
+.project-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
 }
 
-@keyframes logo-spin {
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+button,
+a.button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #555;
+  border-color: #777;
+}
+
+/* Typing animation */
+@keyframes typewriter {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  display: inline-block;
+  animation: typewriter 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
