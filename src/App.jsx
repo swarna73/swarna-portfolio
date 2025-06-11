@@ -23,7 +23,7 @@ export default function App() {
       {section === 'home' && (
         <section className="flex flex-col items-center justify-center text-center py-20 px-4">
           <h2 className="text-4xl font-bold mb-4">Hi, I’m Swarnalatha Swaminathan </h2>
-          <p className="text-lg max-w-2xl text-gray-600">
+          <p className="text-lg max-w-2xl text-black-600">
             Engineering Manager | Full-Stack Developer | Fintech Enthusiast
           </p>
           <p className="mt-4 max-w-xl text-gray-600">
