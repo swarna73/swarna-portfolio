@@ -23,7 +23,7 @@ export default function App() {
       {/* Sections */}
       {section === 'home' && (
         <section className="flex flex-col items-center justify-center text-center py-20 px-4">
-          <h2 className="text-4xl font-bold mb-4">Hi, I’m Swarnalatha Swaminathan 👋</h2>
+          <h2 className="text-4xl font-bold mb-4">Hi, I’m Swarnalatha Swaminathan </h2>
           <p className="text-lg max-w-2xl text-gray-600">
             Engineering Manager | Full-Stack Developer | Fintech Enthusiast
           </p>
@@ -50,7 +50,7 @@ export default function App() {
           </p>
         </section>
       )}
-      <section id="resume" className="py-12 bg-gray-50 text-center">
+      <section id="resume" className="py-12 bg-black text-center">
   <h2 className="text-3xl font-bold mb-4">Resume</h2>
   <p className="text-gray-600 mb-6">Download my resume to learn more about my experience and skills.</p>
 <a
