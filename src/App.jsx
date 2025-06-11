@@ -5,7 +5,7 @@ export default function App() {
   const [section, setSection] = useState('home');
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+<div className="min-h-screen bg-black text-white">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-4 shadow-md bg-white">
         <h1 className="text-xl font-bold text-indigo-600">Swarna</h1>
