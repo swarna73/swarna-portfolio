@@ -7,8 +7,7 @@ export default function App() {
   return (
 <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
-      <nav className="flex justify-between items-center p-4 shadow-md bg-white">
-        <h1 className="text-xl font-bold text-indigo-600">Swarna</h1>
+      <nav className="flex justify-between items-center p-4 shadow-md bg-black">
         <ul className="flex space-x-6 font-medium">
           <li><button onClick={() => setSection('home')}>Home</button></li>
           <li><button onClick={() => setSection('projects')}>Projects</button></li>
