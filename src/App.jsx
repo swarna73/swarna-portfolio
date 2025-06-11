@@ -22,9 +22,9 @@ export default function App() {
 
       {/* Hero Section */}
       <header className="text-center animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-          Hi, I’m Swarnalatha Swaminathan
-        </h1>
+<h1 className="text-4xl md:text-6xl font-extrabold text-white whitespace-nowrap overflow-hidden border-r-4 border-white w-[28ch] animate-typing">
+  Hi, I'm Swarnalatha Swaminathan 
+</h1>
         <p className="mt-4 text-lg text-gray-300">
           <Typewriter
             words={[
