@@ -53,7 +53,6 @@ export default function App() {
       <p className="text-sm text-gray-400 mt-1">Tech Stack: Node.js, Express & MongoDB</p>
       <a href="https://github.com/swarna73/url-shortener-node-express" className="button mt-2 inline-block">View on GitHub</a>
     </div>
-  </div>
 
 <div className="project-card">
   <h3 className="text-xl font-bold mb-2">Job Tracker</h3>
@@ -78,6 +77,7 @@ export default function App() {
     <a href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-frontend" className="button">Frontend</a>
   </div>
 </div>
+  </div>
 
 </section>
       {/* Resume Section */}
