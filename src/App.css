@@ -4,22 +4,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background-color: #000;
+  color: #fff;
 }
 
-/* Section padding and layout */
 section {
   padding: 2rem;
 }
 
-/* Header styling */
 header {
   text-align: center;
   margin-top: 2rem;
 }
 
-/* Project card styling */
 .project-card {
   background-color: #1a1a1a;
   padding: 1.5rem;
@@ -33,7 +30,6 @@ header {
   box-shadow: 0 6px 18px rgba(255, 255, 255, 0.1);
 }
 
-/* Buttons */
 button,
 a.button {
   background-color: #333;

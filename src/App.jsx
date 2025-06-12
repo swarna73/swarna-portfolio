@@ -1,69 +1,68 @@
-import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+import React from "react";
+import "./App.css";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white px-6 py-10">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center mb-16 text-lg">
-        <span className="font-bold text-purple-400">Swarna</span>
-        <div className="space-x-6">
-          {['Home', 'Projects', 'About', 'Contact', 'Resume'].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="relative hover:underline underline-offset-8"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <header className="text-center animate-fade-in">
-<h1 className="text-4xl font-bold mb-4 typewriter">Swarnalatha Swaminathan</h1>
-        <p className="mt-4 text-lg text-gray-300">
-          <Typewriter
-            words={[
-              'Engineering Manager',
-              'Full-Stack Developer',
-              'Fintech Enthusiast'
-            ]}
-            loop={true}
-            cursor
-            cursorStyle="|"
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1500}
-          />
-        </p>
-        <p className="mt-6 max-w-xl mx-auto text-gray-400">
-          I’m passionate about building scalable solutions and bridging the gap between product and engineering.
-          Currently building personal projects in Spring Boot, React, and Node.js — check out what I’ve been working on!
-        </p>
-        <div className="mt-6 flex justify-center space-x-4">
-          <a href="https://github.com/swarna73" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border rounded hover:bg-white hover:text-black transition">
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/swarnalatha-swaminathan" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border rounded hover:bg-white hover:text-black transition">
-            LinkedIn
-          </a>
-        </div>
+    <div className="min-h-screen bg-black text-white">
+      {/* Header Section */}
+      <header className="text-center py-10">
+        <h1 className="text-4xl md:text-6xl font-bold">
+          <span className="typewriter">
+            <Typewriter words={["Swarnalatha Swaminathan"]} cursor loop={1} />
+          </span>
+        </h1>
+        <nav className="mt-6 space-x-6">
+          <a href="#about" className="button">About</a>
+          <a href="#projects" className="button">Projects</a>
+          <a href="#resume" className="button">Resume</a>
+          <a href="#contact" className="button">Contact</a>
+        </nav>
       </header>
 
-      {/* Resume Section */}
-      <section id="resume" className="mt-20 max-w-2xl mx-auto bg-neutral-900 p-6 rounded-xl border border-neutral-700 shadow-md">
-        <h2 className="text-2xl font-bold text-center mb-4">Resume</h2>
-        <p className="text-center text-gray-400 mb-4">
-          Download my resume to learn more about my experience and skills.
+      {/* About Section */}
+      <section id="about" className="text-center py-20">
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="max-w-2xl mx-auto text-lg">
+          I'm an engineering manager with strong hands-on skills in Java, Spring Boot, React, and full-stack development.
         </p>
-        <div className="text-center">
-          <a href="/Swarnalatha_Resume.pdf" target="_blank" className="text-blue-400 hover:underline">
-            View Resume
-          </a>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20">
+        <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
+        <div className="grid md:grid-cols-2 gap-8 px-4">
+          <div className="project-card">
+            <h3 className="text-xl font-bold mb-2">TimeTrackr</h3>
+            <p>Track time per client, manage entries, and generate summaries. Built with Spring Boot + React.</p>
+          </div>
+          <div className="project-card">
+            <h3 className="text-xl font-bold mb-2">Contractify</h3>
+            <p>Contract management platform with approval workflows and reminders.</p>
+          </div>
         </div>
+      </section>
+
+      {/* Resume Section */}
+      <section id="resume" className="text-center py-20">
+        <h2 className="text-3xl font-semibold mb-4">Resume</h2>
+        <a
+          href="/Swarnalatha.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          View My Resume
+        </a>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="text-center py-20">
+        <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+        <p>Email: <a href="mailto:swarnalatha73@gmail.com" className="underline">swarnalathai73@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/swarna73" target="_blank" rel="noreferrer" className="underline">github.com/swarna73</a></p>
       </section>
     </div>
   );
 }
+
