@@ -31,16 +31,6 @@ export default function App() {
   <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div className="project-card">
-      <h3 className="text-xl font-bold mb-2">TimeTrackr</h3>
-      <p>Track time per client, manage entries, and generate summaries. Built with Spring Boot + React.</p>
-    </div>
-
-    <div className="project-card">
-      <h3 className="text-xl font-bold mb-2">Contractify</h3>
-      <p>Contract management platform with approval workflows and reminders.</p>
-    </div>
-
-    <div className="project-card">
       <h3 className="text-xl font-bold mb-2">Expense Tracker</h3>
       <p>Java-based expense tracker to monitor and manage your expenses effectively.</p>
       <p className="text-sm text-gray-400 mt-1">Tech Stack: Java, RESTful API, JWT Authentication</p>
