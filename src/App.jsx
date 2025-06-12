@@ -54,6 +54,17 @@ export default function App() {
       <a href="https://github.com/swarna73/url-shortener-node-express" className="button mt-2 inline-block">View on GitHub</a>
     </div>
   </div>
+<div className="project-card">
+  <h3 className="text-xl font-bold mb-2">Job Tracker</h3>
+  <p>A React + Tailwind UI for tracking job applications. Connects to a Spring Boot backend.</p>
+  <p className="text-sm text-gray-400 mt-1">
+    Tech Stack: Java 17, Spring Boot, Spring Data JPA, H2 DB, Maven
+  </p>
+  <div className="flex flex-wrap gap-2 mt-2">
+    <a href="https://github.com/swarna73/job-tracker-ui" className="button">Frontend</a>
+    <a href="https://github.com/swarna73/job-tracker-backend" className="button">Backend</a>
+  </div>
+</div>
 </section>
       {/* Resume Section */}
       <section id="resume" className="text-center py-20">
