@@ -66,6 +66,19 @@ export default function App() {
     <a href="https://github.com/swarna73/job-tracker-backend" className="button">Backend</a>
   </div>
 </div>
+
+<div className="project-card">
+  <h3 className="text-xl font-bold mb-2">Time Tracker</h3>
+  <p>Full-stack micro-SaaS tool for freelancers to track their time and manage clients.</p>
+  <p className="text-sm text-gray-400 mt-1">
+    Tech Stack: Java, Spring Boot, JPA, H2, React, Tailwind CSS, JWT Auth
+  </p>
+  <div className="flex flex-wrap gap-2 mt-2">
+    <a href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-backend" className="button">Backend</a>
+    <a href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-frontend" className="button">Frontend</a>
+  </div>
+</div>
+
 </section>
       {/* Resume Section */}
       <section id="resume" className="text-center py-20">
