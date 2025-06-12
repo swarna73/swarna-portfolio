@@ -41,6 +41,19 @@ export default function App() {
             <p>Contract management platform with approval workflows and reminders.</p>
           </div>
         </div>
+<div className="project-card">
+  <h3 className="text-xl font-bold mb-2">Expense Tracker</h3>
+  <p className="mb-2">Java-based expense tracker to monitor and manage your expenses effectively.</p>
+  <p className="text-sm text-gray-400 mb-2">Tech Stack: Java, RESTful API, JWT Authentication</p>
+  <a
+    href="https://github.com/swarna73/expense-manager"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button"
+  >
+    View on GitHub
+  </a>
+</div>
       </section>
 
       {/* Resume Section */}
