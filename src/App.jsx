@@ -55,47 +55,6 @@ export default function App() {
     </div>
   </div>
 </section>
-      {/* Projects Section */}
-      <section id="projects" className="py-20">
-        <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8 px-4">
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">TimeTrackr</h3>
-            <p>Track time per client, manage entries, and generate summaries. Built with Spring Boot + React.</p>
-          </div>
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">Contractify</h3>
-            <p>Contract management platform with approval workflows and reminders.</p>
-          </div>
-        </div>
-<div className="project-card">
-  <h3 className="text-xl font-bold mb-2">Expense Tracker</h3>
-  <p className="mb-2">Java-based expense tracker to monitor and manage your expenses effectively.</p>
-  <p className="text-sm text-gray-400 mb-2">Tech Stack: Java, RESTful API, JWT Authentication</p>
-  <a
-    href="https://github.com/swarna73/expense-manager"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="button"
-  >
-    View on GitHub
-  </a>
-</div>
-<div className="project-card">
-  <h3 className="text-xl font-bold mb-2">URL Shortener</h3>
-  <p className="mb-2">A simple URL Shortener built with Node.js, Express, and MongoDB.</p>
-  <p className="text-sm text-gray-400 mb-2">Tech Stack: Node.js, Express & MongoDB</p>
-  <a
-    href="https://github.com/swarna73/url-shortener-node-express"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="button"
-  >
-    View on GitHub
-  </a>
-</div>
-      </section>
-
       {/* Resume Section */}
       <section id="resume" className="text-center py-20">
         <h2 className="text-3xl font-semibold mb-4">Resume</h2>
