@@ -54,6 +54,19 @@ export default function App() {
     View on GitHub
   </a>
 </div>
+<div className="project-card">
+  <h3 className="text-xl font-bold mb-2">URL Shortener</h3>
+  <p className="mb-2">A simple URL Shortener built with Node.js, Express, and MongoDB.</p>
+  <p className="text-sm text-gray-400 mb-2">Tech Stack: Node.js, Express & MongoDB</p>
+  <a
+    href="https://github.com/swarna73/url-shortener-node-express"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="button"
+  >
+    View on GitHub
+  </a>
+</div>
       </section>
 
       {/* Resume Section */}
