@@ -25,7 +25,8 @@ export default function App() {
       <section id="about" className="text-center py-20">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="max-w-2xl mx-auto text-lg">
-          I'm an engineering manager with strong hands-on skills in Java, Spring Boot, React, and full-stack development.
+I’m a passionate software builder who loves working with Java, Spring Boot, and React.
+I enjoy crafting scalable, efficient solutions and exploring new technologies.
         </p>
       </section>
 <section id="projects" className="p-8">
