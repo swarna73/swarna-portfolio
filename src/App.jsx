@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Typewriter } from "react-simple-typewriter";
+import LeetCodeProgress from "./LeetCodeProgress";
 
 export default function App() {
   return (
@@ -70,6 +71,8 @@ export default function App() {
   </div>
 
 </section>
+
+<LeetCodeProgress />
       {/* Resume Section */}
       <section id="resume" className="text-center py-20">
         <h2 className="text-3xl font-semibold mb-4">Resume</h2>
