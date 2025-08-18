@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import { Typewriter } from "react-simple-typewriter";
 import LeetCodeProgress from "./LeetCodeProgress";
+import CurrentProject from './components/CurrentProject/CurrentProject';
+
 
 export default function App() {
   return (
@@ -29,6 +31,9 @@ I am a passionate software builder who loves working with Java, Spring Boot, and
 I enjoy crafting scalable, efficient solutions and exploring new technologies.
         </p>
       </section>
+
+ {/* 🆕 ADD THIS: Current Project Spotlight */}
+      <CurrentProject />
 <section id="projects" className="p-8">
   <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -72,7 +77,6 @@ I enjoy crafting scalable, efficient solutions and exploring new technologies.
   </div>
 
 </section>
-
 <LeetCodeProgress />
       {/* Resume Section */}
       <section id="resume" className="text-center py-20">
