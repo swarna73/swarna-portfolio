@@ -146,26 +146,92 @@ const LanguageRouting = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a 
-                  href="https://github.com/swarna73/salesforce-language-routing-service-cloud"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 focus:bg-blue-700 px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  aria-label="View source code on GitHub"
-                >
-                  <Github size={20} />
-                  <span className="font-medium">View Source Code</span>
-                </a>
-                <button 
-                  className="flex items-center justify-center gap-2 border border-blue-500 text-blue-400 hover:bg-blue-500/10 focus:bg-blue-500/10 px-6 py-3 rounded-lg transition-all duration-200 hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  aria-label="Live demo available in private Salesforce org"
-                  title="Demo available in private Salesforce environment"
-                >
-                  <ExternalLink size={20} />
-                  <span className="font-medium">Live Demo (Salesforce Org)</span>
-                </button>
-              </div>
+		
+		// In your LanguageRouting component, update the buttons section:
+
+<div className="flex flex-col items-center space-y-6 mt-8">
+  {/* Source Code Button */}
+  <div className="flex justify-center mb-4">
+    <a 
+      href="https://github.com/swarna73/language-routing" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="button-primary"
+    >
+      🔗 View Source Code
+    </a>
+  </div>
+  
+  {/* Demo Videos Section */}
+  <div className="text-center w-full max-w-4xl">
+    <h3 className="text-lg font-semibold mb-6 text-blue-400">📹 Demo Walkthrough</h3>
+    
+    {/* Video Buttons */}
+    <div className="flex flex-wrap gap-4 justify-center mb-6">
+      <a 
+        href="https://www.loom.com/share/8ec6c3a5270747ebbab64653d402bfda" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button-secondary"
+      >
+        📋 Demo: System Walkthrough
+      </a>
+      
+      <a 
+        href="https://www.loom.com/share/005a5accd21c418ebe9db2a58fb4d13a" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button-secondary"
+      >
+        ⚡ Demo: Live Case Routing
+      </a>
+    </div>
+    
+    {/* Embedded Videos */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+      {/* Video 1 - System Walkthrough */}
+      <div className="bg-gray-800 rounded-lg p-4">
+        <h4 className="text-md font-medium mb-3 text-center">📋 System Walkthrough</h4>
+        <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+          <iframe
+            src="https://www.loom.com/embed/8ec6c3a5270747ebbab64653d402bfda?sid=abc123"
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+            title="Language Routing System Walkthrough"
+          ></iframe>
+        </div>
+      </div>
+      
+      {/* Video 2 - Live Case Routing */}
+      <div className="bg-gray-800 rounded-lg p-4">
+        <h4 className="text-md font-medium mb-3 text-center">⚡ Live Case Routing</h4>
+        <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
+          <iframe
+            src="https://www.loom.com/embed/005a5accd21c418ebe9db2a58fb4d13a?sid=def456"
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+            title="Live Language Routing Demo"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <p className="text-sm text-gray-400 text-center italic mt-4">
+      Complete walkthrough of intelligent language routing system in action
+    </p>
+  </div>
+</div>
+
+{/* Optional: Mobile-friendly single column on small screens */}
+<style jsx>{`
+  @media (max-width: 1023px) {
+    .grid-cols-1.lg\\:grid-cols-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+`}</style>
             </div>
           </div>
         </section>
