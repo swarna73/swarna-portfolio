@@ -147,8 +147,6 @@ const LanguageRouting = () => {
 
               {/* Action Buttons */}
 		
-		// In your LanguageRouting component, update the buttons section:
-
 <div className="flex flex-col items-center space-y-6 mt-8">
   {/* Source Code Button */}
   <div className="flex justify-center mb-4">
