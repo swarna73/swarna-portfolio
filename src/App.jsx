@@ -5,6 +5,7 @@ import LeetCodeProgress from "./LeetCodeProgress";
 import CurrentProject from './components/CurrentProject/CurrentProject';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LanguageRouting from './pages/projects/LanguageRouting';
+import { Analytics } from '@vercel/analytics/react';
 
 // Main Portfolio Component
 function Portfolio() {
@@ -194,6 +195,8 @@ export default function App() {
         <Route path="/projects/language-routing" element={<LanguageRouting />} />
         {/* Add more routes here as needed */}
       </Routes>
+      {/* Analytics component added here to track all routes */}
+      <Analytics />
     </Router>
   );
 }
