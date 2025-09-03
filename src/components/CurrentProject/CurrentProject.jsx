@@ -3,46 +3,46 @@ import './CurrentProject.css';
 
 const CurrentProject = () => {
   const techStack = [
-    'Salesforce Service Cloud',
-    'Einstein AI',
-    'Apex',
-    'Lightning Web Components',
-    'Multi-language'
+    'Node.js/Express',
+    'Groq AI',
+    'Llama-3.1-8B',
+    'Email APIs',
+    'React Frontend'
   ];
 
   const projectStats = [
-    { number: '5', label: 'Languages Supported' },
-    { number: '95%+', label: 'Test Coverage' },
-    { number: '40%', label: 'Expected Efficiency Gain' }
+    { number: '8', label: 'Email Categories' },
+    { number: '95%+', label: 'Classification Accuracy' },
+    { number: '75%', label: 'Response Time Reduction' }
   ];
 
   const developmentTimeline = [
-    { status: 'complete', text: '✅ Data Architecture & Custom Objects' },
-    { status: 'complete', text: '✅ Language Detection Service (AI Integration)' },
-    { status: 'complete', text: '✅ Case Field Extensions & Tracking' },
-    { status: 'progress', text: '🚧 Intelligent Routing Engine' },
-    { status: 'planned', text: '📋 Flow Automation & Triggers' },
-    { status: 'planned', text: '📊 Analytics Dashboard' }
+    { status: 'complete', text: '✅ Email Parser & Categorization Engine' },
+    { status: 'complete', text: '✅ Advanced Urgency Analysis System' },
+    { status: 'complete', text: '✅ AI Response Generation (Multiple Templates)' },
+    { status: 'progress', text: '🚧 Frontend Dashboard Interface' },
+    { status: 'planned', text: '📋 Email Provider Integration (Gmail/Outlook)' },
+    { status: 'planned', text: '📊 Analytics & Performance Dashboard' }
   ];
 
   return (
     <section className="current-project-spotlight">
       <div className="container">
         <div className="spotlight-badge">
-          🚧 Currently Developing
+          🤖 Currently Developing
         </div>
         
         <h2 className="spotlight-title">
-          Enterprise Salesforce Service Cloud
+          Intelligent Email Agent
         </h2>
         <p className="spotlight-subtitle">
-          AI-powered language detection & intelligent case routing system
+          AI-powered email automation & intelligent response system
         </p>
         
         <div className="project-grid">
           <div className="project-info">
             <p className="project-description">
-              Building an enterprise-grade Service Cloud solution that automatically detects customer communication language and routes cases to agents with matching language skills. <span className="highlight-text">Currently integrating Einstein Language APIs</span> for intelligent automation.
+              Building an advanced email management system that automatically categorizes, prioritizes, and generates intelligent responses to emails using AI. Features smart urgency detection, relationship-aware responses, and multi-template generation. <span className="highlight-text">Currently integrating Groq AI APIs</span> with Llama-3.1-8B for context-aware automation.
             </p>
             
             <div className="tech-stack">
@@ -62,15 +62,15 @@ const CurrentProject = () => {
             
             <div className="cta-buttons">
               <a 
-                href="https://github.com/swarna73/salesforce-language-routing-service-cloud" 
+                href="https://github.com/swarna73/intelligent-email-agent" 
                 className="btn btn-primary" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                📖 View Source Code
+                📁 View Source Code
               </a>
               <a href="#projects" className="btn btn-secondary">
-                🔍 View All Projects
+                🌐 View All Projects
               </a>
             </div>
           </div>
@@ -89,7 +89,7 @@ const CurrentProject = () => {
             
             <div className="impact-highlight">
               <p>
-                <strong>💡 Business Impact:</strong> Targeting 60% reduction in multilingual case resolution time and 25% improvement in customer satisfaction through native language support.
+                <strong>💡 Business Impact:</strong> Targeting 80% reduction in manual email processing time and 40% improvement in response quality through intelligent automation and context-aware AI responses.
               </p>
             </div>
           </div>
