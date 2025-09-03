@@ -39,105 +39,178 @@ function Portfolio() {
       <CurrentProject />
 
       {/* Projects Section */}
-      <section id="projects" className="p-8">
-        <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <section id="projects" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
           
-          {/* Expense Tracker */}
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">Expense Tracker</h3>
-            <p className="mb-3">Java-based expense tracker to monitor and manage your expenses effectively.</p>
-            <p className="text-sm text-gray-400 mb-3">Tech Stack: Java, RESTful API, JWT Authentication</p>
-            <a 
-              href="https://github.com/swarna73/expense-manager" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button mt-2 inline-block hover:opacity-80 transition-opacity"
-            >
-              View on GitHub
-            </a>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            {/* Time Tracker Project */}
+            <div className="project-showcase-card">
+              <div className="project-badge">
+                Full-Stack SaaS
+              </div>
+              
+              <h3 className="project-title">Time Tracker</h3>
+              <p className="project-subtitle">Micro-SaaS tool for freelancers</p>
+              
+              <p className="project-description">
+                Full-stack micro-SaaS application designed for freelancers to efficiently track their time and manage client relationships. Features comprehensive time logging, client management, and reporting capabilities.
+              </p>
+              
+              <div className="tech-stack-grid">
+                <span className="tech-tag">Java 17</span>
+                <span className="tech-tag">Spring Boot</span>
+                <span className="tech-tag">JPA</span>
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Tailwind CSS</span>
+                <span className="tech-tag">JWT Auth</span>
+              </div>
+              
+              <div className="project-stats-mini">
+                <div className="stat-mini">
+                  <span className="stat-number-mini">Full-Stack</span>
+                  <span className="stat-label-mini">Architecture</span>
+                </div>
+                <div className="stat-mini">
+                  <span className="stat-number-mini">JWT</span>
+                  <span className="stat-label-mini">Authentication</span>
+                </div>
+                <div className="stat-mini">
+                  <span className="stat-number-mini">SaaS</span>
+                  <span className="stat-label-mini">Ready</span>
+                </div>
+              </div>
+              
+              <div className="project-buttons">
+                <a 
+                  href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-backend" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-project-primary"
+                >
+                  Backend Code
+                </a>
+                <a 
+                  href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-frontend" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-project-secondary"
+                >
+                  Frontend Code
+                </a>
+              </div>
+            </div>
 
-          {/* URL Shortener */}
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">URL Shortener</h3>
-            <p className="mb-3">A simple URL Shortener built with Node.js, Express, and MongoDB.</p>
-            <p className="text-sm text-gray-400 mb-3">Tech Stack: Node.js, Express & MongoDB</p>
-            <a 
-              href="https://github.com/swarna73/url-shortener-node-express" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button mt-2 inline-block hover:opacity-80 transition-opacity"
-            >
-              View on GitHub
-            </a>
-          </div>
-
-          {/* Job Tracker */}
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">Job Tracker</h3>
-            <p className="mb-3">A React + Tailwind UI for tracking job applications. Connects to a Spring Boot backend.</p>
-            <p className="text-sm text-gray-400 mb-3">
-              Tech Stack: Java 17, Spring Boot, Spring Data JPA, H2 DB, Maven
-            </p>
-            <div className="flex flex-wrap gap-2 mt-2">
-              <a 
-                href="https://github.com/swarna73/job-tracker-ui" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button hover:opacity-80 transition-opacity"
-              >
-                Frontend
-              </a>
-              <a 
-                href="https://github.com/swarna73/job-tracker-backend" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button hover:opacity-80 transition-opacity"
-              >
-                Backend
-              </a>
+            {/* Language Routing Project */}
+            <div className="project-showcase-card">
+              <div className="project-badge">
+                Interactive App
+              </div>
+              
+              <h3 className="project-title">Language Routing</h3>
+              <p className="project-subtitle">Dynamic content routing system</p>
+              
+              <p className="project-description">
+                Interactive language routing application with dynamic content delivery. Features intelligent routing based on user preferences and seamless navigation between different language contexts.
+              </p>
+              
+              <div className="tech-stack-grid">
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">React Router</span>
+                <span className="tech-tag">JavaScript</span>
+                <span className="tech-tag">CSS3</span>
+              </div>
+              
+              <div className="project-stats-mini">
+                <div className="stat-mini">
+                  <span className="stat-number-mini">Multi</span>
+                  <span className="stat-label-mini">Language</span>
+                </div>
+                <div className="stat-mini">
+                  <span className="stat-number-mini">Dynamic</span>
+                  <span className="stat-label-mini">Routing</span>
+                </div>
+                <div className="stat-mini">
+                  <span className="stat-number-mini">React</span>
+                  <span className="stat-label-mini">Based</span>
+                </div>
+              </div>
+              
+              <div className="project-buttons">
+                <a 
+                  href="/projects/language-routing" 
+                  className="btn-project-primary"
+                >
+                  View Live Demo
+                </a>
+                <a 
+                  href="https://github.com/swarna73/salesforce-language-routing-service-cloud/tree/main/Salesforce/language-routing-service-cloud" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-project-secondary"
+                >
+                  Source Code
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Time Tracker */}
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">Time Tracker</h3>
-            <p className="mb-3">Full-stack micro-SaaS tool for freelancers to track their time and manage clients.</p>
-            <p className="text-sm text-gray-400 mb-3">
-              Tech Stack: Java, Spring Boot, JPA, H2, React, Tailwind CSS, JWT Auth
-            </p>
-            <div className="flex flex-wrap gap-2 mt-2">
-              <a 
-                href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-backend" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button hover:opacity-80 transition-opacity"
-              >
-                Backend
-              </a>
-              <a 
-                href="https://github.com/swarna73/timetrackr/tree/main/timetrackr-frontend" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button hover:opacity-80 transition-opacity"
-              >
-                Frontend
-              </a>
+          {/* Intelligent Email Agent - Full Width Spotlight */}
+          <div className="project-showcase-card-wide">
+            <div className="project-badge-special">
+              AI-Powered
             </div>
-          </div>
-
-          {/* Language Routing Project */}
-          <div className="project-card">
-            <h3 className="text-xl font-bold mb-2">Language Routing</h3>
-            <p className="mb-3">Interactive language routing application with dynamic content.</p>
-            <p className="text-sm text-gray-400 mb-3">Tech Stack: React, React Router</p>
-            <a 
-              href="/projects/language-routing" 
-              className="button mt-2 inline-block hover:opacity-80 transition-opacity"
-            >
-              View Project
-            </a>
+            
+            <div className="project-wide-content">
+              <div className="project-wide-info">
+                <h3 className="project-title-large">Intelligent Email Agent</h3>
+                <p className="project-subtitle-large">Advanced AI email automation system</p>
+                
+                <p className="project-description-large">
+                  Cutting-edge email management system powered by Groq AI and Llama-3.1-8B model. Features intelligent categorization, urgency analysis, relationship-aware response generation, and multi-template automation for enhanced productivity.
+                </p>
+                
+                <div className="tech-stack-grid-large">
+                  <span className="tech-tag-large">Node.js/Express</span>
+                  <span className="tech-tag-large">Groq AI</span>
+                  <span className="tech-tag-large">Llama-3.1-8B</span>
+                  <span className="tech-tag-large">Email APIs</span>
+                  <span className="tech-tag-large">React</span>
+                </div>
+                
+                <div className="project-buttons-large">
+                  <a 
+                    href="https://github.com/swarna73/intelligent-email-agent" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-project-primary-large"
+                  >
+                    View Source Code
+                  </a>
+                  <a 
+                    href="#" 
+                    className="btn-project-secondary-large"
+                  >
+                    Documentation
+                  </a>
+                </div>
+              </div>
+              
+              <div className="project-wide-stats">
+                <div className="stat-card-large">
+                  <span className="stat-number-large">8</span>
+                  <span className="stat-label-large">Email Categories</span>
+                </div>
+                <div className="stat-card-large">
+                  <span className="stat-number-large">95%+</span>
+                  <span className="stat-label-large">AI Accuracy</span>
+                </div>
+                <div className="stat-card-large">
+                  <span className="stat-number-large">75%</span>
+                  <span className="stat-label-large">Time Saved</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
